@@ -34,11 +34,15 @@ public class JobTest {
     }
     @Test
     public void testForToString (){
-        assertEquals("ID: " + test_job3.getId() + "\n" +
-                "Name: " + test_job3.getName() + "\n" +
-                "Employer: " + test_job3.getEmployer() + "\n" +
-                "Location: " + test_job3.getLocation() + "\n" +
-                "Position Type: " + test_job3.getPositionType() + "\n" +
-                "Core Competency: " + test_job3.getCoreCompetency(), test_job3.toString());
+        if(test_job3.equals(test_job3)) {
+            assertEquals("ID: " + test_job3.getId() + "\n" +
+                    "Name: " + test_job3.getName() + "\n" +
+                    "Employer: " + test_job3.getEmployer() + "\n" +
+                    "Location: " + test_job3.getLocation() + "\n" +
+                    "Position Type: " + test_job3.getPositionType() + "\n" +
+                    "Core Competency: " + test_job3.getCoreCompetency(), test_job3.toString());
+        } else if (test_job3.equals(" ")) {
+            System.out.println("Data not available!");
+        }
     }
 }
