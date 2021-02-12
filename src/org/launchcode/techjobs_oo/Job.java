@@ -22,7 +22,7 @@ public class Job {
     }
 
     public Job(String name, Employer employer, Location location, PositionType positionType, CoreCompetency coreCompetency ){
-        this.id = id;
+        this ();
         this.name = name;
         this.employer = employer;
         this.location = location;
